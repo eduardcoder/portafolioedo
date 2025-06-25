@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing my web development projects and skills">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hamburger">☰</div>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Front-end developer passionate about creating accessible, responsive web experiences.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="filters">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web</button>
+            <button onclick="filterProjects('mobile')">Mobile</button>
+        </div>
+        <article data-category="web">
+            <h3>E-commerce Website</h3>
+            <figure>
+                <img src="https://via.placeholder.com/600x400" alt="E-commerce project screenshot">
+                <figcaption>Online store with shopping cart functionality</figcaption>
+            </figure>
+        </article>
+        <article data-category="mobile">
+            <h3>Task Manager App</h3>
+            <figure>
+                <img src="https://via.placeholder.com/600x400" alt="Mobile task management application">
+                <figcaption>Task organizer for iOS and Android</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
